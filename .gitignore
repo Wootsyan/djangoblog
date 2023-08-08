@@ -1,0 +1,10 @@
+activate
+activate.*
+django-admin
+easy_install*
+pip*
+sqlformat
+db.sqlite3
+__pycache__
+python
+python3
