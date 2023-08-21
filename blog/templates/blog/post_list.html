@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    <div>
+        <h1>Blog Django Strefa Kursów</h1>
+    </div>
+    {% for post in posts %}
+    <div>
+        <p>Opublikowany: {{ post.publish_date }}</p>
+        <h2><a href="#">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+        <hr>
+    </div>
+    {% endfor %}
+</body>
+
+</html>
