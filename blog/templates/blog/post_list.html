@@ -31,6 +31,9 @@
                     <a href="#">{{ post.author }}</a>
                     on {{ post.publish_date}}
                 </p>
+                {% if post.image %}
+                <img src="{{ post.image.url }}" class="img-fluid">
+                {% endif %}
             </div>
             <!-- Divider-->
             <hr class="my-4" />
