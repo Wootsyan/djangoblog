@@ -30,6 +30,11 @@
                 {% endif %}
             </div>
         </div>
+        {% if user.is_authenticated %}
+        <div class="row gx-4 gx-lg-5 justify-content-end">
+            <a class="d-flex justify-content-end btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="h3"><i class="fa-solid fa-pen-to-square"></i></span></a>
+        </div>
+        {% endif %}
     </div>
 </article>
 {% endblock content %}
